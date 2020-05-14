@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html> 
+	
+<head> 
+	<title> 
+		Creating Search Bar using HTML 
+		CSS and Javascript 
+	</title> 
+	<script>
+		function openWin() {
+		  window.open("./search.html","_self");
+		}
+	  </script>
+
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+    />
+	
+	<!-- linking the stylesheet(CSS) -->
+	<link rel="stylesheet" type="text/css" href="./style.css"> 
+	<link rel="stylesheet" href="main.css" />
+	<script src="jquery.js"></script> 
+
+
+</head> 
+
+<body> 
+
+	<nav class="navbar">
+		<div class="navbar-center">
+		  <span class="nav-icon">
+			<i class="fas fa-bars"></i>
+		  </span>
+		  <img src="./images/logo.png" alt="store logo" style="width: 4%;" />
+		  <form style="
+			height: 60px;
+			width: 60px;
+			">
+			<i class="fas fa-search" onclick="openWin()" style="
+			height: 60px;
+			width: 60px;
+			padding-top: 22px;
+			padding-left: 22px;
+			"></i>
+		  </form>
+  
+		  </div>
+		</div>
+	  </nav>
+
+	<div style="padding-top: 50px;">
+		
+
+		<!-- input tag -->
+	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search animals.."> 
+	
+	<ol id='list' style="padding-top: 50px; padding-right: 100px;"> 
+		<div>
+			<li class="animals" style="width: 200px;">
+			<article class="product">
+				<div class="img-container">
+				  <img 
+					src="./images/sonic.jpg"
+					alt="product"
+					class="product-img"
+					onclick="openWinsonic()"
+					style="width: 200px;"
+					align="left"
+				  />
+				</div>
+				<h3>eee</h3>
+				<h4>$0.99</h4>
+			  </article>
+		</li> 	
+
+		<li class="animals" style="width: 200px;">
+			<article class="product">
+				<div class="img-container">
+				  <img 
+					src="./images/sonic.jpg"
+					alt="product"
+					class="product-img"
+					onclick="openWinsonic()"
+					style="width: 200px;"
+					align="left"
+				  />
+				</div>
+				<h3>aaa</h3>
+				<h4>$0.99</h4>
+			  </article>
+		</li>
+		</div>
+	    
+	</ol> 
+	
+	<!-- linking javscript -->
+	<script src="./animals.js"></script> 
+	</div>
+	
+	
+</body> 
+
+</html> 

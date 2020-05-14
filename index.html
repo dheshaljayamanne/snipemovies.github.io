@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Snipe Movies</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script>
+      function openWin() {
+        window.open("./searchtest.html","_self");
+      }
+    </script>
+    <script>
+      function openWinsonic() {
+        window.open("./movies/sonic720.html","_self");
+      }
+    </script>
+    <script>
+      function openWinbbfl() {
+        window.open("./movies/bbfl720.html","_self");
+      }
+    </script>
+    <script>
+      function openWinbb2() {
+        window.open("./movies/bb2720.html","_self");
+      }
+    </script>
+    <script>
+      function openWinbb() {
+        window.open("./movies/bb720.html","_self");
+      }
+    </script>
+    <script>
+      function openWintwt() {
+        window.open("./movies/twt720.html","_self");
+      }
+    </script>
+    <script>
+      function openWintrolls() {
+        window.open("./movies/trolls720.html","_self");
+      }
+    </script>
+    
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="jquery.js"></script> 
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="./images/logo.png" alt="store logo" style="width: 4%;"/>
+        <form style="
+          height: 60px;
+          width: 60px;
+          ">
+          <i class="fas fa-search" onclick="openWin()" style="
+          height: 60px;
+          width: 60px;
+          padding-top: 22px;
+          padding-left: 22px;
+          "></i>
+        </form>
+
+        </div>
+      </div>
+    </nav>
+
+       
+    <!-- end of hero -->
+
+    <!-- products -->
+    <section class="products">
+      <div class="section-title">
+        <h2>Popular Movies</h2>
+      </div>
+      <div class="products-center">
+        <!-- single product -->
+        <article class="product">
+          <div class="img-container">
+            <img 
+              src="./images/sonic.jpg"
+              alt="product"
+              class="product-img"
+              onclick="openWinsonic()"
+            />
+          </div>
+          <h3>Sonic the Hegdehog</h3>
+          <h4>$0.99</h4>
+        </article>
+
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/trolls2.jpg"
+              alt="product"
+              class="product-img"
+              onclick="openWintwt()"
+            />
+          </div>
+          <h3>Trolls World Tour</h3>
+          <h4>$0.99</h4>
+        </article>
+
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/badboysforlife.jpg"
+              alt="product"
+              class="product-img"
+              onclick="openWinbbfl()"
+            />
+          </div>
+          <h3>Bad Boys For Life</h3>
+          <h4>$0.99</h4>
+        </article>
+
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/badboys2.jpg"
+              alt="product"
+              class="product-img"
+              onclick="openWinbb2()"
+            />
+          </div>
+          <h3>Bad Boys 2</h3>
+          <h4>$0.99</h4>
+        </article>
+
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/badboys.jpg"
+              alt="product"
+              class="product-img"
+              onclick="openWinbb()"
+            />
+          </div>
+          <h3>Bad Boys</h3>
+          <h4>Free</h4>
+        </article>
+
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/trolls1.jpg"
+              alt="product"
+              class="product-img"
+              onclick="openWintrolls()"
+            />
+          </div>
+          <h3>Trolls</h3>
+          <h4>$0.99</h4>
+        </article>
+
+        <!-- end of single product -->
+      </div>
+    </section>
+    <!-- end of products -->
+    <!-- cart -->
+    <!-- end of cart -->
+    <!-- contentful -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!--  javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
